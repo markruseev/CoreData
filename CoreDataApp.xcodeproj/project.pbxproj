@@ -12,16 +12,18 @@
 		765BA55E222BD6570068FE2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765BA55C222BD6570068FE2E /* Main.storyboard */; };
 		765BA560222BD65B0068FE2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765BA55F222BD65B0068FE2E /* Assets.xcassets */; };
 		765BA56B222E85260068FE2E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765BA56A222E85260068FE2E /* Item.swift */; };
+		765BA572222E97990068FE2E /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 765BA570222E97990068FE2E /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		765BA555222BD6570068FE2E /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		765BA555222BD6570068FE2E /* CoreDataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765BA558222BD6570068FE2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		765BA55A222BD6570068FE2E /*  TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " TodoListViewController.swift"; sourceTree = "<group>"; };
 		765BA55D222BD6570068FE2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		765BA55F222BD65B0068FE2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		765BA564222BD65B0068FE2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		765BA56A222E85260068FE2E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		765BA571222E97990068FE2E /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		765BA54C222BD6570068FE2E = {
 			isa = PBXGroup;
 			children = (
-				765BA557222BD6570068FE2E /* CoreData */,
+				765BA557222BD6570068FE2E /* CoreDataApp */,
 				765BA556222BD6570068FE2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +48,12 @@
 		765BA556222BD6570068FE2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				765BA555222BD6570068FE2E /* CoreData.app */,
+				765BA555222BD6570068FE2E /* CoreDataApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		765BA557222BD6570068FE2E /* CoreData */ = {
+		765BA557222BD6570068FE2E /* CoreDataApp */ = {
 			isa = PBXGroup;
 			children = (
 				765BA558222BD6570068FE2E /* AppDelegate.swift */,
@@ -61,12 +63,13 @@
 				765BA564222BD65B0068FE2E /* Info.plist */,
 				765BA56C222E85C10068FE2E /* Data Model */,
 			);
-			path = CoreData;
+			path = CoreDataApp;
 			sourceTree = "<group>";
 		};
 		765BA56C222E85C10068FE2E /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				765BA570222E97990068FE2E /* DataModel.xcdatamodeld */,
 				765BA56A222E85260068FE2E /* Item.swift */,
 			);
 			path = "Data Model";
@@ -99,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		765BA554222BD6570068FE2E /* CoreData */ = {
+		765BA554222BD6570068FE2E /* CoreDataApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 765BA567222BD65B0068FE2E /* Build configuration list for PBXNativeTarget "CoreData" */;
+			buildConfigurationList = 765BA567222BD65B0068FE2E /* Build configuration list for PBXNativeTarget "CoreDataApp" */;
 			buildPhases = (
 				765BA551222BD6570068FE2E /* Sources */,
 				765BA552222BD6570068FE2E /* Frameworks */,
@@ -111,9 +114,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreData;
+			name = CoreDataApp;
 			productName = CoreData;
-			productReference = 765BA555222BD6570068FE2E /* CoreData.app */;
+			productReference = 765BA555222BD6570068FE2E /* CoreDataApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 765BA550222BD6570068FE2E /* Build configuration list for PBXProject "CoreData" */;
+			buildConfigurationList = 765BA550222BD6570068FE2E /* Build configuration list for PBXProject "CoreDataApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				765BA554222BD6570068FE2E /* CoreData */,
+				765BA554222BD6570068FE2E /* CoreDataApp */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				765BA55B222BD6570068FE2E /*  TodoListViewController.swift in Sources */,
+				765BA572222E97990068FE2E /* DataModel.xcdatamodeld in Sources */,
 				765BA56B222E85260068FE2E /* Item.swift in Sources */,
 				765BA559222BD6570068FE2E /* AppDelegate.swift in Sources */,
 			);
@@ -313,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.markruseev.CoreData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markruseev.CoreDataApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.markruseev.CoreData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.markruseev.CoreDataApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		765BA550222BD6570068FE2E /* Build configuration list for PBXProject "CoreData" */ = {
+		765BA550222BD6570068FE2E /* Build configuration list for PBXProject "CoreDataApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				765BA565222BD65B0068FE2E /* Debug */,
@@ -350,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		765BA567222BD65B0068FE2E /* Build configuration list for PBXNativeTarget "CoreData" */ = {
+		765BA567222BD65B0068FE2E /* Build configuration list for PBXNativeTarget "CoreDataApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				765BA568222BD65B0068FE2E /* Debug */,
@@ -360,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		765BA570222E97990068FE2E /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				765BA571222E97990068FE2E /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 765BA571222E97990068FE2E /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 765BA54D222BD6570068FE2E /* Project object */;
 }

@@ -32,9 +32,8 @@
                             <outlet property="delegate" destination="MVo-yv-Dsf" id="AER-D9-4V0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="H2e-f2-ZVL">
+                    <navigationItem key="navigationItem" title="Todoey" largeTitleDisplayMode="always" id="H2e-f2-ZVL">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ebe-hA-GGK">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonPressed:" destination="MVo-yv-Dsf" id="DeL-wt-Bye"/>
                             </connections>
@@ -53,10 +52,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2cV-jH-ivV">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
